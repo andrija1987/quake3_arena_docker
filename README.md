@@ -8,7 +8,8 @@ Happy quake-ing :-)
 
 docker-compose up -d
 
-pi@raspberrypi:~/quake3 $ cat docker-compose.yml 
+docker-compose.yml 
+
 version: '2'
 
 services:
@@ -22,7 +23,9 @@ services:
       - '27960:27960/udp'
     mem_limit: 64mb
     
-    pi@raspberrypi:~/quake3 $ cat server.cfg 
+   
+server.cfg
+
 seta sv_hostname "andrija1987/rpi-quake3-server"
 seta sv_maxclients 12
 seta sv_pure 1
