@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  server:
+    image: wouterds/rpi-quake3-server
+    restart: unless-stopped
+    volumes:
+      - ./pak0.pk3:/data/pak0.pk3
+      - ./server.cfg:/data/server.cfg
+    ports:
+      - '27960:27960/udp'
+    mem_limit: 64mb
